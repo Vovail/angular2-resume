@@ -1,0 +1,20 @@
+.quote-container {
+  padding: 8px 20px;
+  & .author {
+    height: 36px;
+    line-height: 36px;
+    margin-left: 40px;
+  }
+  & .quote-button {
+    margin-right: 40px;
+    float: right;
+  }
+  & .quote {
+    &::before {
+      content: "\""
+    }
+    &::after {
+      content: "\""
+    }
+  }
+}

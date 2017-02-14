@@ -1,0 +1,59 @@
+@import "../assets/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  & .footer {
+    margin-top: auto;
+  }
+}
+
+.first {
+  margin-left: auto
+}
+
+.last {
+  margin-right: auto
+}
+
+.footer {
+  a {
+    &:first-child {
+      margin-left: auto
+    }
+    &:last-child {
+      margin-right: auto
+    }
+  }
+}
+
+.active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+button.small {
+  margin-left: auto;
+}
+
+@media screen and (min-width: 767px) {
+  .small {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .large {
+    display: none;
+  }
+  .active {
+    color: $primary;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  md-toolbar {
+    max-width: 260px;
+  }
+}
+

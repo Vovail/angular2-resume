@@ -1,0 +1,5 @@
+<div *ngIf="data" class="quote-container">
+  <blockquote [innerHTML]="data.quote" class="quote"></blockquote>
+  <cite class="author">{{data.author}}</cite>
+  <button md-raised-button (click)="getQuotes()" class="quote-button">New quote</button>
+</div>
